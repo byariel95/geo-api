@@ -1,6 +1,7 @@
 version: "3.8"
 services: 
     api: 
+      container_name: "myapp"
       image: ariel-monterroso/api-geo
       build:
         dockerfile: Dockerfile
@@ -11,6 +12,7 @@ services:
       ports:
         - "3000:3000"
     postgres:
+      container_name: "psql"
       image: postgres:13
       environment: 
         - POSTGRES_DB=geo-db
@@ -27,6 +29,7 @@ services:
       ports:
         - '5050:80'
     redis:
+      container_name: "redisdb"
       image: redis:6.2
       environment:
           - ALLOW_EMPTY_PASSWORD=yes

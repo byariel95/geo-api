@@ -6,6 +6,7 @@ import { DistancesModule } from './distances/distances.module';
 @Module({
   imports: [
   TypeOrmModule.forRoot({
+    host: 'postgres',
     type:'postgres',
     port: 5432,
     username: 'root',
@@ -17,7 +18,7 @@ import { DistancesModule } from './distances/distances.module';
   RedisModule.forRoot({
     closeClient: true,
     config: {
-        host: 'localhost',
+        host: 'redis',
         port: 6379
     }
   }),
