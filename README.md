@@ -16,6 +16,22 @@ $ docker-compose up -d api
 ```
 you can test the endpoints graphically by going to the following route: http://localhost:3000/docs 
 
+## Optional
+
+if you want to see the information in the database, you can init the pgadmin service with the folliwing command
+
+```bash
+
+
+$ docker-compose up -d pgadmin
+
+user and password for pgadmin ui interface
+
+user: bamonterroso@gmail.com
+password: 12345678
+
+```
+
 <p></p>
 ## Support
 
