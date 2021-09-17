@@ -9,7 +9,7 @@ services:
         - postgres
         - redis
       ports:
-        - "4000:3000"
+        - "3000:3000"
     postgres:
       image: postgres:13
       environment: 

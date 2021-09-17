@@ -30,7 +30,6 @@ export class DistancesService
      if(!resp){
         throw new NotFoundException('places does not exist');
      }
-     console.log(resp);
      return {
        distance: resp,
        unit,
